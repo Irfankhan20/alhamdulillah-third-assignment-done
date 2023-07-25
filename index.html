@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- tailwind and daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/6acc4f0730.js" crossorigin="anonymous"></script>
+
+    <!-- Lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- same color section  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-color': '#F85559',
+                        'title-color': '#121212',
+                        'description-color': '#12121299',
+
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-lato">
+    <header class="max-w-screen-xl mx-auto">
+        <!-- nav section  -->
+        <nav>
+            <div class="navbar bg-btn-color rounded-3xl mt-10">
+                <div class="navbar-start">
+                    
+                        
+                        <ul class="flex gap-7 pl-14">
+                            <li class="text-white text-lg font-medium"><a>Home</a></li>
+                            <li class="text-white text-lg font-medium"><a>About Us</a></li>
+                            <li class="text-white text-lg font-medium"><a>Shop</a></li>
+                            <li class="text-white text-lg font-medium"><a>All Fruits</a></li>
+                        </ul>
+                    
+                </div>
+                <div class="navbar-center">
+                    <img class="h-14" src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl text-white font-semibold">Fruit Burst</a>
+                </div>
+                <div class="navbar-end pr-14">
+                    
+                    <div class="flex">
+                        <input class="py-3 rounded-3xl w-[250px] pl-6" placeholder="Search here" type="text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                       
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto"></main>
+
+    <footer></footer>
 </body>
+
 </html>
